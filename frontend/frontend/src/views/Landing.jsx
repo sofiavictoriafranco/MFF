@@ -4,6 +4,7 @@ import About from "../components/About"
 import Funfacts from "../components/Funfacts"
 import Services from "../components/Services"
 import Phrase from "../components/Phrase"
+import CallUs from "../components/CallUs"
 
 
 
@@ -21,6 +22,7 @@ const Landing = () => {
     <Funfacts/>
     <Services/>
     <Phrase/>
+    <CallUs/>
 
 
 
