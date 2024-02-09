@@ -1,0 +1,199 @@
+{
+    "home": {
+        "NavBar-Home": "Inicio",
+        "NavBar-About": "Sobre Nosotros",
+        "NavBar-Services": "Servicios",
+        "NavBar-Blog": "Blog",
+        "NavBar-Pricing": "Precios",
+        "NavBar-Contact": "Contáctanos",
+        "title1": "El proceso de curación comienza ahora",
+        "title2": "PSICOTERAPIA INNOVADORA Y CONTEMPORÁNEA",
+        "sideBar-login": "ENTRAR",
+        "sidebar-public": "Publicar",
+        "sidebar-orders": "Compras",
+        "sidebar-testimonial": "Publicar testimonio",
+        "sidebar-logout": "SALIR"
+
+    },
+
+    "about": {
+
+        "about1": "Bienvenido a Mental Flex",
+        "about2": "Somos especialistas en salud mental",
+        "description": "Bienvenido/a a Mental Flex, tu confiable compañero virtual en Psicoterapia. Nuestro camino comenzó con el compromiso de brindar apoyo compasivo a personas que atraviesan las complejidades de la vida. Buscar ayuda es el primer valiente paso hacia una transformación genuina y una mejora en la salud mental. En Mental Flex, nuestra motivación central es ayudar sin juzgar, reconociendo el proceso único de cada persona. Nuestras sesiones de terapia virtual están diseñadas para satisfacer necesidades específicas, fomentando relaciones significativas y efectivas. Priorizamos la comunicación abierta como piedra angular del proceso de curación. Nuestros profesionales dedicados utilizan estrategias psicoterapéuticas para crear un entorno seguro y de apoyo, brindando herramientas a las personas para fortalecer sus personalidades y redescubrir un sentido profundo de sí mismas. Mental Flex es una comunidad construida sobre empatía, comprensión y un compromiso compartido con la salud mental. Juntos, nos embarcamos en un viaje hacia un cambio positivo, fomentando la resiliencia y promoviendo el bienestar holístico. Únete a nosotros para abrazar el poder transformador de la terapia. Tenemos un enfoque inclusivo, ayudando a todas las personas sin distinciones basadas en características culturales, sexualidad, género, religión, etc. Da el primer paso hacia una vida más saludable con Mental Flex; estamos aquí para apoyarte en cada paso del proceso.",
+        "card1": "Psicoterapeuta"
+
+
+    },
+
+    "funfacts": {
+        "f1": "Países",
+        "f2": "Pacientes",
+        "f3": "Horas de trabajo",
+        "f4": "Horas académicas"
+        
+   },
+
+   "services": {
+    "services-1": "Que hacemos",
+    "services-2": "Servicios",
+    "option1": "Terapia Individual",
+    "description1": "Terapia para mi",
+    "option2": "Terapia de Parejas",
+    "description2": "Terapia para nosotros",
+    "option3": "Asesoramiento/Counselling",
+    "description3": "Orientación y apoyo emocional",
+    "option4": "Recursos Terapéuticos",
+    "description4": "Audios terapéuticos, guías, etc"
+
+},
+
+"phrase": {
+    "phrase1": "La felicidad no es algo prefabricado. Proviene de tus propias acciones.",
+    "phrase3": "- Dalai Lama",
+    "phrase2": "De tus vulnerabilidades surgirá tu fortaleza. - Sigmund Freud"
+},
+
+"callus": {
+    "call1": "Si te gustaría trabajar con nosotros",
+    "call2": "Contáctanos ahora"
+},
+
+"questions": {
+
+    "questions1": "preguntas frecuentes",
+    "questions2": "ALGUNAS PREGUNTAS",
+    "questions3": "PREGUNTAS FRECUENTES",
+    "question1": "¿Qué es la psicoterapia virtual?",
+    "response1": "La psicoterapia virtual es un servicio de ayuda psicológica que se realiza a través de plataformas en línea, permitiéndote recibir apoyo terapéutico desde la comodidad de tu hogar a través de videoconferencias seguras.",
+    "question2": "¿Necesito algún equipo especial para participar en la terapia virtual?",
+    "response2": "Solo necesitarás un dispositivo con cámara web y micrófono, así como una conexión a Internet estable. Asegúrate de estar en un lugar privado y cómodo durante las sesiones.",
+    "question3": "¿Cómo se realiza el pago de las sesiones de psicoterapia virtual?",
+    "response3": "Eliges el plan que mejor se adapte a tus necesidades, ya sea una sesión o nuestros packs de sesiones mensuales con mayor descuento por sesión. El medio de pago es PayPal, donde puedes agregar tu método de pago preferido. Si necesitas alguna otra manera de pago, por favor contacta a mentalflexinfo@gmail.com y se te asesorará al respecto.",
+    "question4": "¿Cómo se mantiene la privacidad y confidencialidad en las sesiones virtuales?",
+    "response4": "Utilizamos plataformas seguras y cumplimos con las normativas de privacidad para garantizar la confidencialidad de las sesiones virtuales. La información del cliente se maneja de manera ética y profesional.",
+    "question5": "¿Es la psicoterapia virtual tan efectiva como la presencial?",
+    "response5": "Sí, numerosos estudios respaldan la eficacia de la psicoterapia virtual. La terapia en línea puede ser igualmente efectiva que la presencial, ofreciendo flexibilidad y comodidad.",
+    "question6": "¿Qué tipo de problemas o condiciones se pueden abordar en la psicoterapia virtual?",
+    "response6": "La psicoterapia virtual puede abordar una amplia gama de problemas, como ansiedad, depresión, estrés, relaciones interpersonales, proceso de duelo, traumas, patrones negativos, entre otros.",
+    "question7": "¿Qué pasa si quiero cambiar de terapeuta por algún motivo?",
+    "response7": "Si deseas cambiar de terapeuta lo puedes hacer sin problema, únicamente deberás enviarnos un email a mentalflexinfo@gmail.com, explicando brevemente los motivos por los que no quieres continuar con tu terapeuta y comentándonos qué requisitos buscas en la elección de tu nuevo especialista. En menos de 24h te asignaremos otro terapeuta que pueda continuar con tu tratamiento.",
+    "question8": "¿Cómo puedo formar parte del equipo de psicólogos?",
+    "response8": "Si deseas formar parte de nuestro equipo, ponte en contacto en la sección “SI TE GUSTARÍA TRABAJAR CON NOSOTROS”. Nos llegará un email al cual te responderemos solicitando tu CV y una carta contándonos por qué te gustaría formar parte de nuestro equipo y con mucho gusto evaluaremos tu solicitud."
+    
+
+},
+
+"blog": {
+    "blog1": "ARTÍCULOS VALIOSOS PARA MEJORAR TU SALUD MENTAL",
+    "blog2": "BLOG"
+},
+
+"pricing": {
+
+    "pricing1": "NUESTROS PAQUETES",
+
+    "pricing2": "ELIGE LA OPCIÓN QUE MEJOR SE ADAPTE A TI",
+
+    "purchase": "Comprar",
+
+    "individual1": "Sesión Individual",
+
+    "individual2": "1:1 Sesión de Terapia",
+
+    "individual3": "Sesión de 60 minutos",
+
+    "individualMonth1": "MEJOR VALOR",
+
+    "individualMonth2": "Sesiones Individuales Mensuales",
+
+    "individualMonth3": "1:1 Sesiones de Terapia",
+
+    "individualMonth4": "Sesiones de 60 minutos",
+
+    "individualMonth5": "4 sessions (1 per week)",
+
+    "individualMonth6": " -10% por sesión: $45",
+
+    "individualMonthx2-1": "Sesiones Individuales Mensuales x2",
+
+    "individualMonthx2-2": "1:1 Sesiones de Terapia",
+
+    "individualMonthx2-3": "Sesiones de 60 minutos",
+
+    "individualMonthx2-4": "8 sesiones (2 x semana)",
+
+    "individualMonthx2-5": "-10% por sesión: $45",
+
+    "couples1": "Sesión de Terapia de Parejas ",
+
+    "couples2": "1:2 Sesión de Terapia",
+
+    "couples3": "Sesión de 60 minutos",
+
+    "couples4": "Se recomiendan 8 sesiones para la Terapia de Parejas",
+
+    "couplesPackage1": "Pack Sesiones de Terapia de Parejas",
+
+    "couplesPackage2": "1:2 Sesiones de Terapia",
+
+    "couplesPackage3": "Sesiones de 60 minutos",
+
+    "couplesPackage4": " -20% por sesión: $52",
+
+    "couplesPackage5": "Se recomiendan 8 sesiones para la Terapia de Parejas",
+
+    "URL1": "https://www.mental-flex.com/purchase1ES",
+
+    "URL2": "https://www.mental-flex.com/purchase2ES",
+
+    "URL3": "https://www.mental-flex.com/purchase3ES",
+
+    "URL4": "https://www.mental-flex.com/purchase4ES",
+
+    "URL5": "https://www.mental-flex.com/purchase5ES"
+
+
+    },
+
+    "contact": {
+
+        "contact1": "Contáctanos",
+        "contact2": "PONTE EN CONTACTO CON NOSOTROS",
+        "description": "Siéntete libre de ponerte en contacto con nosotros, y nos esforzaremos por ofrecer una respuesta rápida. En Mental Flex, nuestro objetivo es brindar un apoyo integral a aquellos que confían en nuestros servicios. Dentro de nuestra organización, descubrirás la asistencia psicológica esencial para fomentar transformaciones positivas y duraderas en tu vida. Cualquier persona que aspire a iniciar un cambio personal o de vida se beneficiará de la orientación necesaria para navegar por este camino. Reconociendo esto, en Mental Flex, estamos preparados para ser tu espacio seguro, proporcionando el entorno para superar desafíos y obtener las herramientas esenciales para un viaje exitoso. Nuestro pilar principal es el tener una mirada inclusiva para atender a todas las personas, sin hacer diferencias por características culturales, de sexualidad, identidad sexual o de género, religión, etc.",
+        "name": "Nombre",
+        "message": "Mensaje",
+        "send": "Enviar"
+        
+    },
+
+ 
+
+    "congratulations": {
+        "congratulations1": "Felicidades por tu compra! Has invertido en tu salud mental y bienestar.",
+        "congratulations2": "Muchas gracias por confiar en Mental Flex.",
+        "congratulations3": "Te estará llegando un email ",
+        "congratulations4": "con los detalles de Google Meet en breve.",
+        "return": "VOLVER"
+
+   },
+
+
+   
+   "publicTestimonial": {
+
+    "testimonial1": "Testimonio",
+    "testimonial2": "Publica tu testimonio",
+    "name": "Nombre",
+    "description": "Descripción",
+    "social": "Red social",
+    "optional": "Opcional",
+    "image": "Imagen",
+    "public": "Publicar"
+}
+
+
+
+
+
+}
