@@ -1,10 +1,12 @@
 import React from "react"
-
+import {useTranslation} from 'react-i18next'
 
 
 
 
 const Home = () => {
+
+    const [t, i18n] = useTranslation("global")
 
 
     return(
@@ -15,9 +17,9 @@ const Home = () => {
 				<div className="col-md-12">
 					<div className="st-home-unit" style={{padding:"258px 0px"}}>
 						<div className="hero-txt">
-							<p className="hero-work">Web Design - Web Development - UX Design</p>
-							<h2 className="hero-title">BEST Template for Agency</h2>
-							<a href="#" className="btn btn-main btn-lg">Find Out More</a>
+							<p className="hero-work">{t("home.title1")}</p>
+							<h2 className="hero-title">{t("home.title2")}</h2>
+							<a href="#" className="btn btn-main btn-lg">{t("home.NavBar-Contact")}</a>
 						</div>
 
 					</div>
