@@ -6,6 +6,7 @@ import Services from "../components/Services"
 import Phrase from "../components/Phrase"
 import CallUs from "../components/CallUs"
 import Questions from "../components/Questions"
+import Pricing from "../components/Pricing"
 
 
 
@@ -25,6 +26,7 @@ const Landing = () => {
     <Phrase/>
     <Questions/>
     <CallUs/>
+    <Pricing/>
     
 
 
