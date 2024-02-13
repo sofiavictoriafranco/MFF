@@ -7,6 +7,7 @@ import Phrase from "../components/Phrase"
 import CallUs from "../components/CallUs"
 import Questions from "../components/Questions"
 import Pricing from "../components/Pricing"
+import Testimonials from "../components/Testimonials/Testimonials"
 
 
 
@@ -27,6 +28,7 @@ const Landing = () => {
     <Questions/>
     <CallUs/>
     <Pricing/>
+    <Testimonials/>
     
 
 
