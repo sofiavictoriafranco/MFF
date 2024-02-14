@@ -20,6 +20,9 @@ import global_es from './translations/es/global.json'
 import global_en from './translations/en/global.json'
 
 
+import { Auth0Provider } from "@auth0/auth0-react";
+
+
 i18next.init({
   interpolation: {escapeValue: false},
   lng: "en",
@@ -37,12 +40,19 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
      <I18nextProvider i18n={i18next}>
+     <Auth0Provider
+      domain="dev-mf4ckivqqauvyjxr.us.auth0.com"
+      clientId="m3RpuvAw5a10hWYALIpLjD0W0zC9Srbs"
+      redirectUri={window.location.origin}
+      scope="openid profile email"
+    >
      <Provider store={store}>
         <BrowserRouter>
   <ToastContainer />
     <App />
     </BrowserRouter>
     </Provider>
+    </Auth0Provider>
     </I18nextProvider>
   </React.StrictMode>
 );

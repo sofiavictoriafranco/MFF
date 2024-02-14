@@ -1,0 +1,66 @@
+
+.menu-bars {
+    margin-left: 2rem;
+    font-size: 4rem;
+    background: none;
+  }
+  
+  .nav-menu {
+    background-color: rgba(40, 40, 40, 0.95);
+    width: 150px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinea los elementos a la derecha */
+    position: fixed;
+    top: 0;
+    transition: 350ms;
+    right: -100%; /* Ajusta esto según tus necesidades */
+  }
+  
+  .nav-menu.active {
+    right: 0;
+  }
+  
+  .nav-text {
+    font-family: "Oswald";
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 15px 10px;
+    color: #fff;
+    transition: color 0.3s, background-color 0.3s, padding 0.3s;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea los elementos al extremo derecho */
+    border-radius: 10px;
+  }
+  
+  
+  
+  .nav-text a:hover {
+    background-color: #FFA500;
+  }
+  
+  .nav-menu-items {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  span {
+    margin-right: 10px; /* Ajusta el margen derecho en lugar del izquierdo */
+  }
+
+
+  .logout-button {
+    width: 100%;
+    display: block;
+  }
+
+
+  .user-info {
+    text-align: center;
+    margin-bottom: 20px; /* Ajusta según sea necesario */
+  }
+

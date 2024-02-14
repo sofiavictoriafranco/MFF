@@ -8,6 +8,7 @@ import CallUs from "../components/CallUs"
 import Questions from "../components/Questions"
 import Pricing from "../components/Pricing"
 import Testimonials from "../components/Testimonials/Testimonials"
+import NavBar from "../components/NavBar/NavBar"
 
 
 
@@ -19,6 +20,8 @@ const Landing = () => {
     return(
 
 		<>
+
+    <NavBar/>
 
     <Home/>
     <About/>
