@@ -50,7 +50,7 @@ const NavBar = () => {
       offset={-100} 
       duration={500}
       style={{ cursor: 'pointer' }} 
-      activeClass='false'><img src="assets/photos/logo3.png" alt="" className="img-responsive"/></Link>
+      activeClass='false'><img src="assets/photos/logoo3.png" alt="" className="img-responsive"/></Link>
 				</div>
 
 

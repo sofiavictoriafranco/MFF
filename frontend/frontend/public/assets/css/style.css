@@ -547,10 +547,10 @@ h6 {
   height: 60px;
 }
 .st-navbar-mini .navbar-default .navbar-brand {
-  padding: 15px 15px;
+  padding: 5px 5px;
 }
 .st-navbar-mini .navbar-default .navbar-brand img {
-  height: 30px;
+  height: 50px;
 }
 .st-navbar-mini .navbar-default .navbar-nav > li.active > a,
 .st-navbar-mini .navbar-default .navbar-nav > li.active a:hover,
@@ -565,9 +565,10 @@ h6 {
           transition: padding 0.3s;
 }
 .navbar-brand img {
-  height: 48px;
+  height: 80px;
   -webkit-transition: height 0.3s;
           transition: height 0.3s;
+          border-radius: 50px;
 }
 .navbar-nav > li > a {
   font-family: "Oswald";
