@@ -35,7 +35,7 @@ const Purchase6ES = () => {
                 <div className="section-title st-center">
                     <h3>Reserva tu turno</h3>
                     <p>MENTAL FLEX</p>
-                    <div class="tidycal-embed" data-path="mental-flex/sesionindividual"></div>
+                    <div class="tidycal-embed" data-path="mental-flex/sesion-inicial-consultoria"></div>
                 </div>
 
                 </div>
