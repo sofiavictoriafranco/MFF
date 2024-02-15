@@ -16,8 +16,8 @@ const Pricing = () => {
 			<div className="row">
 				<div className="col-md-12">
 					<div className="section-title st-center">
-						<h3>Our Packages</h3>
-						<p>Avocent deditum long</p>
+						<h3>{t("pricing.pricing1")}</h3>
+						<p>{t("pricing.pricing2")}</p>
 					</div>
 				</div>
 			</div>
@@ -25,6 +25,43 @@ const Pricing = () => {
 
 
 			<div className="row">
+
+
+
+				<div className="col-md-3">
+					<div className="pricing-table">
+						<div className="pricing-header">
+							<div className="pt-price">$25<small>/m</small></div>
+							<div className="pt-name">{t("pricing.counselling1")}</div>
+						</div>
+						<div className="pricing-body">
+							<ul>
+								<li><i className="fa fa-check"></i> {t("pricing.counselling2")}</li>
+								
+								<li><i className="fa fa-check"></i> {t("pricing.counselling3")}</li>
+								<li><i className="fa fa-check"></i> {t("pricing.counselling4")}</li>
+								<li><i className="fa fa-check"></i> {t("pricing.counselling5")}</li>
+								<li><br/></li>
+								<li></li>
+								
+								
+							</ul>
+						</div>
+						<div className="pricing-footer">
+						<button
+            onClick={() => {
+
+				 window.location.href = t("pricing.URL1") 
+             
+            }}
+			className="btn btn-default"
+            
+          >
+           {t("pricing.purchase")}
+          </button>
+						</div>
+					</div>
+				</div>
 
 
 				<div className="col-md-3">
@@ -146,28 +183,7 @@ const Pricing = () => {
 				</div>
 
 
-				<div className="col-md-3">
-					<div className="pricing-table">
-						<div className="pricing-header">
-							<div className="pt-price">$99.99<small>/m</small></div>
-							<div className="pt-name">Enterprise</div>
-						</div>
-						<div className="pricing-body">
-							<ul>
-								<li><i className="fa fa-check"></i> Unlimited Space</li>
-								<li><i className="fa fa-check"></i> Unlimited Bandwidth</li>
-								<li><i className="fa fa-check"></i> Free Domain</li>
-								<li><i className="fa fa-check"></i> Free Email</li>
-								<li><i className="fa fa-check"></i> Free cPanel</li>
-								<li><i className="fa fa-check"></i> Free FTP</li>
-								<li><i className="fa fa-check"></i> Free Support</li>
-							</ul>
-						</div>
-						<div className="pricing-footer">
-							<a href="#" className="btn btn-default">Purchase</a>
-						</div>
-					</div>
-				</div>
+				
 
 
 			</div>
