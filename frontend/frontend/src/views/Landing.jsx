@@ -24,6 +24,7 @@ import Purchase2ES from "../components/Purchase/Purchase2ES";
 import Footer from "../components/Footer"
 import CongratulationsEN from "../components/Congratulations/CongratulationsEN"
 import CongratulationsES from "../components/Congratulations/CongratulationsES"
+import Contact from "../components/Contact/Contact"
 
 const Landing = () => {
 
@@ -48,6 +49,7 @@ const Landing = () => {
     <Testimonials/>
     <Questions/>
     <CallUs/>
+    <Contact/>
     <Footer/>
    
 </>
