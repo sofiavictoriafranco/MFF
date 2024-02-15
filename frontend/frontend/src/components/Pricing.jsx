@@ -46,6 +46,7 @@ const Pricing = () => {
 								
 								
 								
+								
 							</ul>
 						</div>
 						<div className="pricing-footer">
@@ -75,9 +76,9 @@ const Pricing = () => {
 							<ul>
 								<li><i className="fa fa-check"></i> {t("pricing.individual2")}</li>
 								<li><i className="fa fa-check"></i> {t("pricing.individual3")}</li>
-								<li> <br/></li>
-								<li> <br/></li>
-								<li> <br/></li>
+								<li><i className="fa fa-check"></i> {t("pricing.individual4")}</li>
+								<li><i className="fa fa-check"></i> {t("pricing.individual5")}</li>
+								<li> </li>
 								<li><br/></li>
 								<li> <br/></li>
 							</ul>

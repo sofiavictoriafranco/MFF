@@ -18,8 +18,8 @@
 
     "about": {
 
-        "about1": "Bienvenido a Mental Flex",
-        "about2": "Somos especialistas en salud mental",
+        "about1": "Bienvenido/a a Mental Flex",
+        "about2": "Qué hacemos",
         "description": "Bienvenido/a a Mental Flex, tu confiable compañero virtual en Psicoterapia. Nuestro camino comenzó con el compromiso de brindar apoyo compasivo a personas que atraviesan las complejidades de la vida. Buscar ayuda es el primer valiente paso hacia una transformación genuina y una mejora en la salud mental. En Mental Flex, nuestra motivación central es ayudar sin juzgar, reconociendo el proceso único de cada persona. Nuestras sesiones de terapia virtual están diseñadas para satisfacer necesidades específicas, fomentando relaciones significativas y efectivas. Priorizamos la comunicación abierta como piedra angular del proceso de curación. Nuestros profesionales dedicados utilizan estrategias psicoterapéuticas para crear un entorno seguro y de apoyo, brindando herramientas a las personas para fortalecer sus personalidades y redescubrir un sentido profundo de sí mismas. Mental Flex es una comunidad construida sobre empatía, comprensión y un compromiso compartido con la salud mental. Juntos, nos embarcamos en un viaje hacia un cambio positivo, fomentando la resiliencia y promoviendo el bienestar holístico. Únete a nosotros para abrazar el poder transformador de la terapia. Tenemos un enfoque inclusivo, ayudando a todas las personas sin distinciones basadas en características culturales, sexualidad, género, religión, etc. Da el primer paso hacia una vida más saludable con Mental Flex; estamos aquí para apoyarte en cada paso del proceso.",
         "card1": "Psicoterapeuta"
 
@@ -40,7 +40,7 @@
     "option1": "Terapia Individual",
     "description1": "Terapia para mi",
     "option2": "Terapia de Parejas",
-    "description2": "Terapia para nosotros",
+    "description2": "Terapia para nosotros/as",
     "option3": "Consultoría",
     "description3": "Orientación y apoyo emocional",
     "option4": "Recursos Terapéuticos",
@@ -49,7 +49,7 @@
 },
 
 "phrase": {
-    "phrase1": "La felicidad no es algo prefabricado. Proviene de tus propias acciones.",
+    "phrase1": "La felicidad no es algo pre-fabricado. Proviene de tus propias acciones.",
     "phrase3": "- Dalai Lama",
     "phrase2": "De tus vulnerabilidades surgirá tu fortaleza. - Sigmund Freud"
 },
@@ -69,7 +69,7 @@
     "question2": "¿Necesito algún equipo especial para participar en la terapia virtual?",
     "response2": "Solo necesitarás un dispositivo con cámara web y micrófono, así como una conexión a Internet estable. Asegúrate de estar en un lugar privado y cómodo durante las sesiones.",
     "question3": "¿Cómo se realiza el pago de las sesiones de psicoterapia virtual?",
-    "response3": "Eliges el plan que mejor se adapte a tus necesidades, ya sea una sesión o nuestros packs de sesiones mensuales con mayor descuento por sesión. El medio de pago es PayPal, donde puedes agregar tu método de pago preferido. Si necesitas alguna otra manera de pago, por favor contacta a mentalflexinfo@gmail.com y se te asesorará al respecto.",
+    "response3": "Eliges el plan que mejor se adapte a tus necesidades, ya sea una sesión o nuestros packs de sesiones mensuales con mayor descuento por sesión. El medio de pago es PayPal, donde puedes agregar tu método de pago preferido. Si necesitas alguna otra manera de pago, por favor contacta a info@mental-flex.com y se te asesorará al respecto.",
     "question4": "¿Cómo se mantiene la privacidad y confidencialidad en las sesiones virtuales?",
     "response4": "Utilizamos plataformas seguras y cumplimos con las normativas de privacidad para garantizar la confidencialidad de las sesiones virtuales. La información del cliente se maneja de manera ética y profesional.",
     "question5": "¿Es la psicoterapia virtual tan efectiva como la presencial?",
@@ -77,7 +77,7 @@
     "question6": "¿Qué tipo de problemas o condiciones se pueden abordar en la psicoterapia virtual?",
     "response6": "La psicoterapia virtual puede abordar una amplia gama de problemas, como ansiedad, depresión, estrés, relaciones interpersonales, proceso de duelo, traumas, patrones negativos, entre otros.",
     "question7": "¿Qué pasa si quiero cambiar de terapeuta por algún motivo?",
-    "response7": "Si deseas cambiar de terapeuta lo puedes hacer sin problema, únicamente deberás enviarnos un email a mentalflexinfo@gmail.com, explicando brevemente los motivos por los que no quieres continuar con tu terapeuta y comentándonos qué requisitos buscas en la elección de tu nuevo especialista. En menos de 24h te asignaremos otro terapeuta que pueda continuar con tu tratamiento.",
+    "response7": "Si deseas cambiar de terapeuta lo puedes hacer sin problema, únicamente deberás enviarnos un email a info@mental-flex.com, explicando brevemente los motivos por los que no quieres continuar con tu terapeuta y comentándonos qué requisitos buscas en la elección de tu nuevo especialista. En menos de 24h te asignaremos otro terapeuta que pueda continuar con tu tratamiento. Dentro de las 24 a 48 horas te asignaremos otro terapeuta que pueda continuar con tu tratamiento.",
     "question8": "¿Cómo puedo formar parte del equipo de psicólogos?",
     "response8": "Si deseas formar parte de nuestro equipo, ponte en contacto en la sección “SI TE GUSTARÍA TRABAJAR CON NOSOTROS”. Nos llegará un email al cual te responderemos solicitando tu CV y una carta contándonos por qué te gustaría formar parte de nuestro equipo y con mucho gusto evaluaremos tu solicitud."
     
@@ -103,6 +103,11 @@
 
     "individual3": "Sesión de 60 minutos",
 
+    "individual4": "1:1 Consultoría",
+
+    "individual5": "60 minutos de sesión de Consultoría",
+
+
     "individualMonth1": "MEJOR VALOR",
 
     "individualMonth2": "Sesiones Individuales Mensuales",
@@ -111,7 +116,7 @@
 
     "individualMonth4": "Sesiones de 60 minutos",
 
-    "individualMonth5": "4 sessions (1 per week)",
+    "individualMonth5": "4 sesiones (1 x semana)",
 
     "individualMonth6": " -10% por sesión: $45",
 

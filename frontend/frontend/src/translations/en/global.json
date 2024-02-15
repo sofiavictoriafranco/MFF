@@ -6,7 +6,7 @@
         "NavBar-Blog": "Blog",
         "NavBar-Pricing": "Pricing",
         "NavBar-Contact": "Contact Us",
-        "title1": "Healing process starts now",
+        "title1": "The healing process starts now",
         "title2": "INNOVATE & CONTEMPORARY PSYCHOTHERAPY",
         "sideBar-login": "LOGIN",
         "sidebar-public": "Public",
@@ -26,7 +26,7 @@
     "funfacts": {
          "f1": "Countries",
          "f2": "Patients",
-         "f3": "Hours work",
+         "f3": "Worked hours",
          "f4": "Academic hours"
          
     },
@@ -98,6 +98,10 @@
 
     "individual3": "60-minute session",
 
+    "individual4": "1:1 Counselling",
+
+    "individual5": "60-minute Counselling session",
+
     "individualMonth1": "BEST VALUE",
 
     "individualMonth2": "Monthly Individual sessions",
@@ -146,7 +150,7 @@
 
     "counselling4": "1:1 Counselling",
 
-    "counselling5": "30 minute initial counselling session",
+    "counselling5": "30-minute Counselling session",
 
     "URL1": "https://www.mental-flex.com/purchase1EN",
 
