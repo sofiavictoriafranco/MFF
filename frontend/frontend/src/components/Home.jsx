@@ -19,7 +19,7 @@ const Home = () => {
 						<div className="hero-txt">
 							<p className="hero-work">{t("home.title1")}</p>
 							<h2 className="hero-title">{t("home.title2")}</h2>
-							<a href="#" className="btn btn-main btn-lg">{t("home.NavBar-Contact")}</a>
+							<a href="#contact" className="btn btn-main btn-lg">{t("home.NavBar-Contact")}</a>
 						</div>
 
 					</div>
