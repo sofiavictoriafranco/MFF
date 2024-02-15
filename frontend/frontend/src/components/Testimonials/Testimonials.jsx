@@ -32,7 +32,7 @@ const Testimonials = () => {
 
     
 
-	console.log(testimonials)
+	
 
 	
     return(
@@ -62,7 +62,7 @@ const Testimonials = () => {
         {testimonials && testimonials.map((e)=>{
             return (
 
- <SwiperSlide>
+ <SwiperSlide key={e.name}>
 
 <div className="swiper-zoom-container">
 <div className='mytestimonial'>

@@ -47,7 +47,7 @@ const SideBar = () => {
         fetchData(); 
       }, [user]);
 
-console.log(role)
+
 
 
 

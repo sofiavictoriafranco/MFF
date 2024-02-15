@@ -41,18 +41,18 @@ const Contact = () => {
     return(
 
 
-        <section class="contact" id="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-title st-center">
+        <section className="contact" id="contact">
+		<div className="container">
+			<div className="row">
+				<div className="col-md-12">
+					<div className="section-title st-center">
 						<h3>{t("contact.contact1")}</h3>
 						<p>{t("contact.contact2")}</p>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-6">
+			<div className="row">
+				<div className="col-md-6">
 			
 
 <form  className="contact-form"ref={form} onSubmit={sendEmail}>
@@ -62,13 +62,13 @@ const Contact = () => {
       <input className="form-control" type="email" name="user_email"  />
       <label>{t("contact.message")}</label>
       <textarea className="form-control" rows="10"  name="message" />
-      <button className="btn btn-main btn-lg" type="submit" value="Send" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Sending..."><i class="fa fa-paper-plane "></i>
+      <button className="btn btn-main btn-lg" type="submit" value="Send" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Sending..."><i className="fa fa-paper-plane "></i>
       {t("contact.send")}</button>
     </form>
 
 
 				</div>
-				<div class="col-md-6">
+				<div className="col-md-6">
 					<p> {t("contact.description")}</p>
 					<address>
 						<strong>info@mental-flex.com</strong><br/>

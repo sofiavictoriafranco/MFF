@@ -11,11 +11,11 @@ const Phrase = () => {
 
     return(
 
-        <section class="call-2-acction" data-stellar-background-ratio="0.4">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="c2a">
+        <section className="call-2-acction" data-stellar-background-ratio="0.4">
+		<div className="container">
+			<div className="row">
+				<div className="col-md-12">
+					<div className="c2a">
 						<h2>{t("phrase.phrase1")}</h2>
                         <h2>{t("phrase.phrase3")}</h2>
 						<p>{t("phrase.phrase2")}</p>
