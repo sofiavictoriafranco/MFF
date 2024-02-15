@@ -45,13 +45,14 @@ const Pricing = () => {
 								<li></li>
 								
 								
+								
 							</ul>
 						</div>
 						<div className="pricing-footer">
 						<button
             onClick={() => {
 
-				 window.location.href = t("pricing.URL1") 
+				 window.location.href = t("pricing.URL6") 
              
             }}
 			className="btn btn-default"

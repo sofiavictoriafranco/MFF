@@ -25,6 +25,8 @@ import Footer from "../components/Footer"
 import CongratulationsEN from "../components/Congratulations/CongratulationsEN"
 import CongratulationsES from "../components/Congratulations/CongratulationsES"
 import Contact from "../components/Contact/Contact"
+import Purchase6EN from "../components/Purchase/Purchase6EN";
+import Purchase6ES from "../components/Purchase/Purchase6ES";
 
 const Landing = () => {
 
@@ -67,6 +69,8 @@ const Landing = () => {
                 <Route path="/purchase5EN" element={<Purchase5EN/>}/>
                 <Route path="/purchase5ES" element={<Purchase5ES/>}/>
                 <Route path="/purchase2ES" element={<Purchase2ES/>}/>
+                <Route path="/purchase6EN" element={<Purchase6EN/>}/>
+                <Route path="/purchase6ES" element={<Purchase6ES/>}/>
 
 
                 <Route path="/congratulationsEN" element={<CongratulationsEN/>}/>
