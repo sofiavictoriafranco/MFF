@@ -31,7 +31,7 @@ const Pricing = () => {
 				<div className="col-md-3">
 					<div className="pricing-table">
 						<div className="pricing-header">
-							<div className="pt-price">$25<small>/m</small></div>
+							<div className="pt-price">$25<small>/USD</small></div>
 							<div className="pt-name">{t("pricing.counselling1")}</div>
 						</div>
 						<div className="pricing-body">
@@ -69,7 +69,7 @@ const Pricing = () => {
 				<div className="col-md-3">
 					<div className="pricing-table">
 						<div className="pricing-header">
-							<div className="pt-price">$50<small>/m</small></div>
+							<div className="pt-price">$50<small>/USD</small></div>
 							<div className="pt-name">{t("pricing.individual1")}</div>
 						</div>
 						<div className="pricing-body">
@@ -109,7 +109,7 @@ const Pricing = () => {
                 <div className="col-md-3">
 					<div className="pricing-table featured">
 						<div className="pricing-header">
-							<div className="pt-price">$180<small>/m</small></div>
+							<div className="pt-price">$180<small>/USD</small></div>
 							<div className="pt-name">{t("pricing.individualMonth2")}</div>
 							<div className="featured-text">{t("pricing.individualMonth1")}</div>
 						</div>
@@ -150,7 +150,7 @@ const Pricing = () => {
 				<div className="col-md-3">
 					<div className="pricing-table">
 						<div className="pricing-header">
-							<div className="pt-price">$360<small>/m</small></div>
+							<div className="pt-price">$360<small>/USD</small></div>
 							<div className="pt-name">{t("pricing.individualMonthx2-1")}</div>
 						</div>
 						<div className="pricing-body">
@@ -203,7 +203,7 @@ const Pricing = () => {
 				<div className="col-md-3">
 					<div className="pricing-table">
 						<div className="pricing-header">
-							<div className="pt-price">$65<small>/m</small></div>
+							<div className="pt-price">$65<small>/USD</small></div>
 							<div className="pt-name">{t("pricing.couples1")}</div>
 						</div>
 						<div className="pricing-body">
@@ -239,7 +239,7 @@ const Pricing = () => {
 				<div className="col-md-3">
 					<div className="pricing-table featured">
 						<div className="pricing-header">
-							<div className="pt-price">$416<small>/m</small></div>
+							<div className="pt-price">$416<small>/USD</small></div>
 							<div className="pt-name">{t("pricing.couplesPackage1")}</div>
 							<div className="featured-text">{t("pricing.individualMonth1")}</div>
 						</div>
