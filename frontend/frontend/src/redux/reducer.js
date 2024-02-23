@@ -1,10 +1,11 @@
-import { GET_TESTIMONIALS } from "./actions"
+import { GET_TESTIMONIALS, GET_BOOKINGS } from "./actions"
 
 
 const initialState = {
 
    
-    testimonials: []
+    testimonials: [],
+    bookings: [],
   
 }
 
@@ -19,6 +20,15 @@ function reducer(state= initialState, {type, payload}) {
                         testimonials: payload,
         
                     }
+
+
+                    case GET_BOOKINGS:
+                        return{
+                            ... state,
+                            bookings: payload,
+            
+                        }
+    
 
 
 

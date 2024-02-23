@@ -27,6 +27,7 @@ import CongratulationsES from "../components/Congratulations/CongratulationsES"
 import Contact from "../components/Contact/Contact"
 import Purchase6EN from "../components/Purchase/Purchase6EN";
 import Purchase6ES from "../components/Purchase/Purchase6ES";
+import Bookings from "../components/DashboardUser/Bookings"
 
 const Landing = () => {
 
@@ -75,6 +76,8 @@ const Landing = () => {
 
                 <Route path="/congratulationsEN" element={<CongratulationsEN/>}/>
                 <Route path="/congratulationsES" element={<CongratulationsES/>}/>
+
+                <Route path="/bookings" element={<Bookings/>}/>
     
 
 
