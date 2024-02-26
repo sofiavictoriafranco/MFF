@@ -3,6 +3,7 @@ import {useTranslation} from 'react-i18next'
 import { getBookings } from '../../redux/actions';
 import { useAuth0 } from "@auth0/auth0-react";
 import { useDispatch, useSelector} from "react-redux"
+import './Bookings.css'
 
 
 
@@ -26,35 +27,85 @@ const Bookings = () => {
 
     const userEmail = user ? user.email : null;
 
-   
+
 
     const filteredBookings = bookings.filter(booking => booking.email === userEmail);
 
-    
 
-    
+
+
 
 
     return(
 
         <>
-        <h1>Reservas filtradas por email</h1>
-        <div>
-            {isAuthenticated? filteredBookings.map((booking) => (
-                <div >
-                    <h1>ID: {booking.id}</h1>
-                    <h1>EMAIL: {booking.email}</h1>
-                    <h1>Meeting: {booking.meeting_url}</h1>
 
-                    
-                    
-                    
+
+
+<div className="container">
+        <div className="row">
+            <div className="col-md-12">
+                <div className="section-title st-center">
+                    <h3>Check your Bookings</h3>
+                    <p>MENTAL FLEX</p>
+
+                     </div>
+                     
+                         </div>
+
                 </div>
-            )) : ""}
+
+                </div>
+
+
+      <div>
+            {isAuthenticated? filteredBookings.map((booking) => (
+
+                
+                
+                    <div class="col-md-4" > 
+
+                   
+                        <br/>
+        <div class="card" >
+
+            <div >
+            <h4>ID: {booking.id}</h4>
+            <p>EMAIL: {booking.email}</p>
+            </div>
+
+            <button style={{ position: 'absolute', bottom: '10px', right: '10px' }} className="btn btn-main btn-lg" onClick={() => window.location.href = booking.meeting_url}>Go</button>
+
         </div>
-    </>
 
         
+        
+        </div>
+
+        
+    
+            )) : ""}
+        </div>
+
+
+
+                
+            
+
+
+
+
+
+
+
+        
+  
+
+
+
+    </>
+
+
     )
 }
 
