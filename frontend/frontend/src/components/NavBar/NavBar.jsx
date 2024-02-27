@@ -94,7 +94,7 @@ const NavBar = () => {
 
 
 						<li><a
-    href="https://blog.mental-flex.com/"
+    href="https://mental-flex.blogspot.com/"
     target="_blank"
     rel="noopener noreferrer"
     style={{ cursor: 'pointer' }}
