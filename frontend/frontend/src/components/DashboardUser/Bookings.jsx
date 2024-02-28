@@ -4,6 +4,7 @@ import { getBookings } from '../../redux/actions';
 import { useAuth0 } from "@auth0/auth0-react";
 import { useDispatch, useSelector} from "react-redux"
 import './Bookings.css'
+import {Spinner } from 'react-bootstrap';
 
 
 
@@ -21,15 +22,12 @@ const Bookings = () => {
 
     const bookings = useSelector(state => state.bookings)
 
-    console.log(user.email)
-    console.log(bookings)
-
 
     const userEmail = user ? user.email : null;
 
 
 
-    const filteredBookings = bookings.filter(booking => booking.email === userEmail);
+    const filteredBookings =  userEmail? bookings.filter(booking => booking.email === userEmail) : null
 
 
 
@@ -59,7 +57,7 @@ const Bookings = () => {
 
 
       <div>
-            {isAuthenticated? filteredBookings.map((booking) => (
+            {filteredBookings? filteredBookings.map((booking) => (
 
                 
                 
@@ -84,7 +82,21 @@ const Bookings = () => {
 
         
     
-            )) : ""}
+            )) : 
+
+            
+            
+              <div className="text-center">
+                <Spinner animation="border" role="status">
+                  <span className="sr-only">Loading...</span>
+                </Spinner>
+                <p>Loading...</p>
+              </div>
+            
+            
+            
+            
+            }
         </div>
 
 
