@@ -54,7 +54,7 @@ const SideBar = () => {
   return (
     <>
 
-{!isAuthenticated && (
+{/* {!isAuthenticated && (
 
 <li  className='nav-text'>
 <Link onClick={loginWithPopup} className="logout-button">
@@ -64,7 +64,7 @@ const SideBar = () => {
   
             )
 
-             }
+             } */}
 
 
                {
