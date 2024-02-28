@@ -26,6 +26,9 @@ const Bookings = () => {
     const userEmail = user ? user.email : null;
 
 
+    const currentDate = new Date();
+
+
 
     const filteredBookings =  userEmail? bookings.filter(booking => booking.email === userEmail) : null
 
@@ -71,6 +74,22 @@ const Bookings = () => {
             <h4>{booking.booking_type_title}</h4>
             <p>{booking.booking_type_duration} min</p>
             <p>{booking.booking_type_description}</p>
+
+
+            {currentDate < new Date(booking.starts_at) ? (
+                    <p>Estado: Pendiente</p>
+                  ) : currentDate >= new Date(booking.starts_at) &&
+                    currentDate <= new Date(booking.ends_at) ? (
+                    <p>Estado: En curso</p>
+                  ) : (
+                    <p>Estado: Listo</p>
+                  )}
+
+
+
+
+
+
             </div>
 
             <button style={{ position: 'absolute', bottom: '10px', right: '10px' }} className="btn btn-main btn-lg" onClick={() => window.location.href = booking.meeting_url}>Go</button>
