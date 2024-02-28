@@ -11,6 +11,7 @@ import {Spinner } from 'react-bootstrap';
 const Bookings = () => {
 
     const [t, i18n] = useTranslation("global")
+    
 
     const dispatch = useDispatch()
 
