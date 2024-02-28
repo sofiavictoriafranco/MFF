@@ -68,8 +68,9 @@ const Bookings = () => {
         <div class="card" >
 
             <div >
-            <h4>ID: {booking.id}</h4>
-            <p>EMAIL: {booking.email}</p>
+            <h4>{booking.booking_type_title}</h4>
+            <p>{booking.booking_type_duration} min</p>
+            <p>{booking.booking_type_description}</p>
             </div>
 
             <button style={{ position: 'absolute', bottom: '10px', right: '10px' }} className="btn btn-main btn-lg" onClick={() => window.location.href = booking.meeting_url}>Go</button>
