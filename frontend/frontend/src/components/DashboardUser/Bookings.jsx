@@ -1,4 +1,4 @@
-import React, {useEffect} from "react"
+import React, {useEffect, useState} from "react"
 import {useTranslation} from 'react-i18next'
 import { getBookings } from '../../redux/actions';
 import { useAuth0 } from "@auth0/auth0-react";
@@ -11,6 +11,8 @@ import {Spinner } from 'react-bootstrap';
 const Bookings = () => {
 
     const [t, i18n] = useTranslation("global")
+
+  
     
 
     const dispatch = useDispatch()
@@ -32,6 +34,7 @@ const Bookings = () => {
 
 
     const filteredBookings =  userEmail? bookings.filter(booking => booking.email === userEmail) : null
+
 
 
 
@@ -69,7 +72,7 @@ const Bookings = () => {
 
                    
                         <br/>
-        <div class="card" >
+        <div className={`card ${currentDate < new Date(booking.starts_at) ? '' : 'pending'}`} >
 
             <div >
             <h4>{booking.booking_type_title}</h4>
@@ -77,13 +80,21 @@ const Bookings = () => {
             
 
 
-            {currentDate < new Date(booking.starts_at) ? (
-                    <p>Pending</p>
+            {currentDate < new Date(booking.starts_at) ?  (
+
+                <div>
+                
+                <p>Pending</p>
+                </div>
+
                   ) : currentDate >= new Date(booking.starts_at) &&
                     currentDate <= new Date(booking.ends_at) ? (
                     <p>In progress</p>
                   ) : (
+                    <div>
+                     
                     <p>Concluded</p>
+                    </div>
                   )}
 
 
@@ -93,7 +104,12 @@ const Bookings = () => {
 
             </div>
 
-            <button style={{ position: 'absolute', bottom: '10px', right: '10px' }} className="btn btn-main btn-lg" onClick={() => window.location.href = booking.meeting_url}>Join</button>
+            {currentDate < new Date(booking.starts_at) ? (
+  <button style={{ position: 'absolute', bottom: '10px', right: '10px' }} className="btn btn-main btn-lg" onClick={() => window.location.href = booking.meeting_url}>
+    Join
+  </button>
+) : null}
+            
 
         </div>
 

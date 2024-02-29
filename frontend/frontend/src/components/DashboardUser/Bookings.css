@@ -44,3 +44,22 @@
 .card p{
     padding: 10px 0;
 }
+
+.card.pending::before {
+  background: #808080; 
+}
+
+.button {
+  font-family: "Oswald";
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-radius: 40px;
+  padding: 8px 30px;
+  margin-bottom: 5px;
+  background-color: #808080;
+
+         
+          
+
+    
+}
