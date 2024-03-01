@@ -4,7 +4,11 @@ import { getBookings } from '../../redux/actions';
 import { useAuth0 } from "@auth0/auth0-react";
 import { useDispatch, useSelector} from "react-redux"
 import './Bookings.css'
-import {Spinner } from 'react-bootstrap';
+import {Spinner, Navbar, Nav, Button } from 'react-bootstrap';
+import {Link} from 'react-scroll'
+
+
+
 
 
 
@@ -46,100 +50,196 @@ const Bookings = () => {
         <>
 
 
-
-<div className="container">
-        <div className="row">
-            <div className="col-md-12">
-                <div className="section-title st-center">
-                    <h3>Check your Bookings</h3>
-                    <p>MENTAL FLEX</p>
-
-                     </div>
-                     
-                         </div>
-
-                </div>
-
-                </div>
+<header className="st-navbar-mini">
+		<nav className="navbar navbar-default navbar-fixed-top clearfix" role="navigation">
+			<div className="container">
+				
+				<div className="navbar-header">
+					<button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#sept-main-nav">
+						<span className="sr-only">Toggle navigation</span>
+						<span className="icon-bar"></span>
+						<span className="icon-bar"></span>
+						<span className="icon-bar"></span>
+					</button>
 
 
-      <div>
-            {filteredBookings? filteredBookings.map((booking) => (
-
-                
-                
-                    <div class="col-md-4" > 
-
-                   
-                        <br/>
-        <div className={`card ${currentDate < new Date(booking.starts_at) ? '' : 'pending'}`} >
-
-            <div >
-            <h4>{booking.booking_type_title}</h4>
-            <p>{booking.booking_type_duration} min</p>
-            
 
 
-            {currentDate < new Date(booking.starts_at) ?  (
-
-                <div>
-                
-                <p>Pending</p>
-                </div>
-
-                  ) : currentDate >= new Date(booking.starts_at) &&
-                    currentDate <= new Date(booking.ends_at) ? (
-                    <p>In progress</p>
-                  ) : (
-                    <div>
-                     
-                    <p>Concluded</p>
-                    </div>
-                  )}
+					<Link className="navbar-brand"to="home" 
+      spy={true} 
+      smooth={true} 
+      offset={-100} 
+      duration={500}
+      style={{ cursor: 'pointer' }} 
+      activeClass='false'><img src="assets/photos/logoo3.png" alt="" className="img-responsive"/></Link>
+				</div>
 
 
 
 
 
+				
+				<div className="collapse navbar-collapse main-nav" id="sept-main-nav">
+					<ul className="nav navbar-nav navbar-right">
+						<li ></li>
 
-            </div>
 
-            {currentDate < new Date(booking.starts_at) ? (
-  <button style={{ position: 'absolute', bottom: '10px', right: '10px' }} className="btn btn-main btn-lg" onClick={() => window.location.href = booking.meeting_url}>
-    Join
-  </button>
-) : null}
-            
 
-        </div>
 
-        
-        
-        </div>
+						<li></li>
 
-        
+
+
+
+
+						<li></li>
+
+
+
+
+						<li></li>
+
+
+
+
+
+						<li></li>
+
+
+
+
+						
+						<li></li>
+
+
+
+<li> <a onClick={()=> i18n.changeLanguage("es")} style={{ cursor: 'pointer' }}>ES</a></li>
+<li> <a onClick={()=> i18n.changeLanguage("en")} style={{ cursor: 'pointer' }}>EN </a></li>
+
+
+
+
+
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+
+
+<section className="pricing" id="pricing">
+		<div className="container">
+			<div className="row">
+				<div className="col-md-12">
+					<div className="section-title st-center">
+						<h3>Check your bookings</h3>
+						<p>Mental Flex</p>
+
+          
+      
+
+
+					</div>
+      
+				</div> 
+ 
+			</div>
+
+
+
+
+			<div className="row">
+
+
     
-            )) : 
 
-            
-            
-              <div className="text-center">
-                <Spinner animation="border" role="status">
-                  <span className="sr-only">Loading...</span>
-                </Spinner>
-                <p>Loading...</p>
-              </div>
-            
-            
-            
-            
-            }
+
+{filteredBookings? filteredBookings.map((booking) => (
+
+    
+    
+        <div className="col-md-4" > 
+
+       
+            <br/>
+<div className={`card ${currentDate < new Date(booking.starts_at) ? '' : 'pending'}`} >
+
+<div >
+<h4>{booking.booking_type_title}</h4>
+<p>{booking.booking_type_duration} min</p>
+
+
+
+{currentDate < new Date(booking.starts_at) ?  (
+
+    <div>
+    
+    <p>Pending</p>
+    </div>
+
+      ) : currentDate >= new Date(booking.starts_at) &&
+        currentDate <= new Date(booking.ends_at) ? (
+        <p>In progress</p>
+      ) : (
+        <div>
+         
+        <p>Concluded</p>
         </div>
+      )}
+
+
+
+
+
+
+</div>
+
+{currentDate < new Date(booking.starts_at) ? (
+<button style={{ position: 'absolute', bottom: '10px', right: '10px' }} className="btn btn-main btn-lg" onClick={() => window.location.href = booking.meeting_url}>
+Join
+</button>
+) : null}
+
+
+</div>
+
+
+
+</div>
+
+
+
+)) : 
+
+
+
+  <div className="text-center">
+    <Spinner animation="border" role="status">
+      <span className="sr-only">Loading...</span>
+    </Spinner>
+    <p>Loading...</p>
+  </div>
+
+
+
+
+}
+</div>
+
+				
+
+		</div>
+	</section>
+
 
 
 
                 
             
+
 
 
 
