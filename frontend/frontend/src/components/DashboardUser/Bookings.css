@@ -67,36 +67,3 @@
 
 
 
-
-.navbarr {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  padding: 10px;
-  color: white;
-}
-
-.navbarr-brand {
-  font-size: 1.5em;
-}
-
-.navbarr-nav {
-  list-style: none;
-  display: flex;
-}
-
-.navr-item {
-  margin-right: 15px;
-}
-
-.navr-item a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.navr-item a:hover {
-  color: #66c2ff; /* Cambia el color al pasar el ratón */
-}

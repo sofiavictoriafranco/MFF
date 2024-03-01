@@ -108,8 +108,8 @@ const Bookings = () => {
 
 
 
-<li> <a onClick={()=> i18n.changeLanguage("es")} style={{ cursor: 'pointer' }}>ES</a></li>
-<li> <a onClick={()=> i18n.changeLanguage("en")} style={{ cursor: 'pointer' }}>EN </a></li>
+<li> <a onClick={()=> i18n.changeLanguage("es")} style={{ cursor: 'pointer', color: '#FFA500'}}>ES</a></li>
+<li> <a onClick={()=> i18n.changeLanguage("en")} style={{ cursor: 'pointer', color: '#FFA500'}}>EN </a></li>
 
 
 
