@@ -65,13 +65,8 @@ const Bookings = () => {
 
 
 
-					<Link className="navbar-brand"to="home" 
-      spy={true} 
-      smooth={true} 
-      offset={-100} 
-      duration={500}
-      style={{ cursor: 'pointer' }} 
-      activeClass='false'><img src="assets/photos/logoo3.png" alt="" className="img-responsive"/></Link>
+					<a className="navbar-brand" href="https://www.mental-flex.com" 
+    ><img src="assets/photos/logoo3.png" alt="" className="img-responsive"/></a>
 				</div>
 
 
