@@ -39,6 +39,8 @@ const Bookings = () => {
 
     const filteredBookings =  userEmail? bookings.filter(booking => booking.email === userEmail) : null
 
+	let contMISX2 = 0
+
 
 
 
@@ -133,6 +135,7 @@ const Bookings = () => {
 						<h3>Check your bookings</h3>
 						<p>Mental Flex</p>
 
+
           
       
 
@@ -165,6 +168,24 @@ const Bookings = () => {
 <div >
 <h4>{booking.booking_type_title}</h4>
 <p>{booking.booking_type_duration} min</p>
+
+{booking.booking_type_title === 'Monthly Individual sessions x2' && contMISX2<8? (
+
+
+contMISX2++,
+<p>{contMISX2}/8</p>
+
+): 
+
+
+
+(
+     contMISX2=0,
+	<p>{contMISX2+1}/8</p>
+)
+
+}
+
 
 
 
