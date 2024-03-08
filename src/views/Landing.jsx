@@ -28,6 +28,7 @@ import Contact from "../components/Contact/Contact"
 import Purchase6EN from "../components/Purchase/Purchase6EN";
 import Purchase6ES from "../components/Purchase/Purchase6ES";
 import Bookings from "../components/DashboardUser/Bookings"
+import PastBookings from "../components/DashboardUser/PastBookings"
 
 const Landing = () => {
 
@@ -78,6 +79,7 @@ const Landing = () => {
                 <Route path="/congratulationsES" element={<CongratulationsES/>}/>
 
                 <Route path="/bookings" element={<Bookings/>}/>
+                <Route path="/pastBookings" element={<PastBookings/>}/>
     
 
 

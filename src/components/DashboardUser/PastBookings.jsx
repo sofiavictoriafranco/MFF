@@ -12,7 +12,7 @@ import {Link} from 'react-scroll'
 
 
 
-const Bookings = () => {
+const PastBookings = () => {
 
     const [t, i18n] = useTranslation("global")
 
@@ -106,7 +106,7 @@ const Bookings = () => {
 
 
 						
-						<li><a href="http://localhost:3001/pastBookings">Past Bookings</a></li>
+						<li><a href="http://localhost:3001/bookings">Bookings</a></li>
 
 
 
@@ -132,7 +132,7 @@ const Bookings = () => {
 			<div className="row">
 				<div className="col-md-12">
 					<div className="section-title st-center">
-						<h3>Check your bookings</h3>
+						<h3>Check your past bookings</h3>
 						<p>Mental Flex</p>
 
 
@@ -275,4 +275,4 @@ Join
     )
 }
 
-export default Bookings
+export default PastBookings
