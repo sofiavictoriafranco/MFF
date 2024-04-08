@@ -16,6 +16,8 @@ const Bookings = () => {
 
     const [t, i18n] = useTranslation("global")
 
+	
+
   
     
 
@@ -23,11 +25,25 @@ const Bookings = () => {
 
     let { logout, loginWithPopup, isAuthenticated, user } = useAuth0();
 
-    useEffect(()=>{
-        dispatch(getBookings())
-    },[dispatch])
+	const bookings = useSelector(state => state.bookings)
+	const pastBookings = useSelector(state => state.pastBookings)
+	const pendingBookings = useSelector(state => state.pendingBookings)
+	const actualBookings = useSelector(state => state.actualBookings)
 
-    const bookings = useSelector(state => state.bookings)
+	const [state, setState] = useState(actualBookings)
+
+
+	useEffect(() => {
+       
+        dispatch(getBookings());
+    }, [dispatch]);
+
+   
+    useEffect(() => {
+        setState(actualBookings);
+    }, []);
+
+    
 
 
     const userEmail = user ? user.email : null;
@@ -39,7 +55,18 @@ const Bookings = () => {
 
     const filteredBookings =  userEmail? bookings.filter(booking => booking.email === userEmail) : null
 
+	const pastFilteredBookings =  userEmail? pastBookings.filter(booking => booking.email === userEmail) : null
+
+	const pendingFilteredBookings =  userEmail? pendingBookings.filter(booking => booking.email === userEmail) : null
+
+	const actualFilteredBookings =  userEmail? actualBookings.filter(booking => booking.email === userEmail) : null
+
 	let contMISX2 = 0
+
+
+	const handleClick = (arg) => {
+		setState(arg); 
+	  };
 
 
 
@@ -105,8 +132,10 @@ const Bookings = () => {
 
 
 
+						<li><a onClick={() => handleClick(actualFilteredBookings)} style={{ cursor: 'pointer', color: '#FFA500'}}>Actual Bookings</a></li>
+						<li><a onClick={() => handleClick(pendingFilteredBookings)} style={{ cursor: 'pointer'}}>Pending Bookings</a></li>
+						<li><a onClick={() => handleClick(pastFilteredBookings)} style={{ cursor: 'pointer'}}>Past Bookings</a></li>
 						
-						<li><a href="http://localhost:3001/pastBookings">Past Bookings</a></li>
 
 
 
@@ -155,7 +184,7 @@ const Bookings = () => {
     
 
 
-{filteredBookings? filteredBookings.map((booking) => (
+{state? state.map((booking) => (
 
     
     
