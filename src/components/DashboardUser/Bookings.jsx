@@ -16,7 +16,7 @@ const Bookings = () => {
 
     const [t, i18n] = useTranslation("global")
 
-	
+	const [selectedOption, setSelectedOption] = useState(null);
 
   
     
@@ -64,8 +64,10 @@ const Bookings = () => {
 	let contMISX2 = 0
 
 
-	const handleClick = (arg) => {
+	const handleClick = (arg, str) => {
 		setState(arg); 
+
+		setSelectedOption(str)
 	  };
 
 
@@ -132,9 +134,9 @@ const Bookings = () => {
 
 
 
-						<li><a onClick={() => handleClick(actualFilteredBookings)} style={{ cursor: 'pointer', color: '#FFA500'}}>Actual Bookings</a></li>
-						<li><a onClick={() => handleClick(pendingFilteredBookings)} style={{ cursor: 'pointer'}}>Pending Bookings</a></li>
-						<li><a onClick={() => handleClick(pastFilteredBookings)} style={{ cursor: 'pointer'}}>Past Bookings</a></li>
+						<li><a onClick={() => handleClick(actualFilteredBookings, "actual")} style={{ cursor: 'pointer', color: selectedOption === "actual" ? '#FFA500' : ''}}>Actual Bookings</a></li>
+						<li><a onClick={() => handleClick(pendingFilteredBookings, "pending")} style={{ cursor: 'pointer', color: selectedOption === "pending" ? '#FFA500' : ''}}>Pending Bookings</a></li>
+						<li><a onClick={() => handleClick(pastFilteredBookings, "past")} style={{ cursor: 'pointer', color: selectedOption === "past" ? '#FFA500' : ''}}>Past Bookings</a></li>
 						
 
 
@@ -192,18 +194,20 @@ const Bookings = () => {
 
        
             <br/>
-<div className={`card ${currentDate < new Date(booking.starts_at) ? '' : 'pending'}`} >
+<div className={`card ${currentDate <= new Date(booking.starts_at) ? '' : 'pending'}`} >
 
 <div >
 <h4>{booking.booking_type_title}</h4>
-<p>{booking.starts_at} {booking.ends_at}</p>
+<p>{booking.starts_at.slice(0,10)} ({booking.starts_at.slice(11,16)}-{booking.ends_at.slice(11,16)})</p>
 
 
 {booking.booking_type_title === 'Monthly Individual sessions x2' && contMISX2<8? (
 
 
 contMISX2++,
-<p>{contMISX2}/8</p>
+//<p>{contMISX2}/8</p>
+
+<p></p>
 
 ): 
 
@@ -211,7 +215,8 @@ contMISX2++,
 
 (
      contMISX2=0,
-	<p>{contMISX2+1}/8</p>
+	//<p>{contMISX2+1}/8</p>
+	<p></p>
 )
 
 }
@@ -226,8 +231,7 @@ contMISX2++,
     <p>Pending</p>
     </div>
 
-      ) : currentDate >= new Date(booking.starts_at) &&
-        currentDate <= new Date(booking.ends_at) ? (
+      ) : currentDate === new Date(booking.starts_at)? (
         <p>In progress</p>
       ) : (
         <div>

@@ -40,10 +40,31 @@ function reducer(state= initialState, {type, payload}) {
                       return startsAt < currentDate && booking.cancelled_at === null; 
                     });
 
+                    pastBookings.sort((a, b) => {
+                      const dateA = new Date(a.starts_at);
+                      const dateB = new Date(b.starts_at);
+                      return dateB - dateA; 
+                  });
+
+
+
                     const pendingBookings = payload.filter(booking => {
                         const startsAt = new Date(booking.starts_at); 
                         return startsAt > currentDate && booking.cancelled_at === null; 
                       });
+
+
+                      pendingBookings.sort((a, b) => {
+                        const dateA = new Date(a.starts_at);
+                        const dateB = new Date(b.starts_at);
+
+                        const diffA = Math.abs(dateA - currentDate);
+    const diffB = Math.abs(dateB - currentDate);
+    
+   
+    return diffA - diffB; 
+                        
+                    });
 
 
                       const actualBookings = payload.filter(booking => {
@@ -52,11 +73,36 @@ function reducer(state= initialState, {type, payload}) {
                       });
 
 
+                      actualBookings.sort((a, b) => {
+                        const dateA = new Date(a.starts_at);
+                        const dateB = new Date(b.starts_at);
+                    
+                        // Calcular las diferencias entre las fechas y la fecha actual
+                        const diffA = Math.abs(dateA - currentDate);
+                        const diffB = Math.abs(dateB - currentDate);
+                    
+                        // Verificar si la fecha de inicio es en el futuro
+                        if (dateA > currentDate && dateB > currentDate) {
+                            // Ordenar por la fecha más cercana a la fecha actual
+                            return diffA - diffB;
+                        } else {
+                            // Ordenar de mayor a menor
+                            return dateB - dateA;
+                        }
+                    });
+
 
                       const bookings = payload.filter(booking => {
                         
                         return booking.cancelled_at === null; 
                       });
+
+
+                      bookings.sort((a, b) => {
+                        const dateA = new Date(a.starts_at);
+                        const dateB = new Date(b.starts_at);
+                        return dateB - dateA; // Orden descendente
+                    });
 
 
                       
