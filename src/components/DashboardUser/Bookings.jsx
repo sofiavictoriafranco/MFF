@@ -16,7 +16,9 @@ const Bookings = () => {
 
     const [t, i18n] = useTranslation("global")
 
-	const [selectedOption, setSelectedOption] = useState(null);
+	const [selectedOption, setSelectedOption] = useState("actual");
+
+	const [loaded, setLoaded] = useState(false);
 
   
     
@@ -30,36 +32,50 @@ const Bookings = () => {
 	const pendingBookings = useSelector(state => state.pendingBookings)
 	const actualBookings = useSelector(state => state.actualBookings)
 
-	const [state, setState] = useState(actualBookings)
-
-
-	useEffect(() => {
-       
-        dispatch(getBookings());
-    }, [dispatch]);
-
-   
-    useEffect(() => {
-        setState(actualBookings);
-    }, []);
-
-    
-
-
-    const userEmail = user ? user.email : null;
-
-
-    const currentDate = new Date();
-
-
-
+	
+	
+	const userEmail = user ? user.email : null;
+	
+	const actualFilteredBookings =  userEmail? actualBookings.filter(booking => booking.email === userEmail) : null
+	
     const filteredBookings =  userEmail? bookings.filter(booking => booking.email === userEmail) : null
 
 	const pastFilteredBookings =  userEmail? pastBookings.filter(booking => booking.email === userEmail) : null
 
 	const pendingFilteredBookings =  userEmail? pendingBookings.filter(booking => booking.email === userEmail) : null
 
-	const actualFilteredBookings =  userEmail? actualBookings.filter(booking => booking.email === userEmail) : null
+
+
+	
+const [state, setState] = useState(null) 
+
+
+useEffect(() => {
+    dispatch(getBookings())
+        
+}, []);
+
+
+
+useEffect(() => {
+    if (loaded === false && actualFilteredBookings !== null) {
+        setState(actualFilteredBookings);
+        setSelectedOption("actual");
+		setLoaded(true)
+    }
+}, [actualFilteredBookings]);
+
+console.log(actualFilteredBookings)
+console.log(state)
+    
+
+
+    const currentDate = new Date();
+
+
+
+    
+	
 
 	let contMISX2 = 0
 
