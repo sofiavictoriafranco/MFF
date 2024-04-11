@@ -59,15 +59,15 @@ useEffect(() => {
 
 
 useEffect(() => {
-    if (loaded === false && actualFilteredBookings !== null) {
+    if (loaded === false && actualFilteredBookings.length !== 0) {
         setState(actualFilteredBookings);
         setSelectedOption("actual");
 		setLoaded(true)
     }
 }, [actualFilteredBookings]);
 
-console.log(actualFilteredBookings)
-console.log(state)
+console.log("actual", actualFilteredBookings)
+
     
 
 
