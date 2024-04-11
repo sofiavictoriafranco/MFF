@@ -8,7 +8,7 @@ export const GET_BOOKINGS = 'GET_BOOKINGS'
 
   export const getTestimonials = () => {
     return(dispatch) => {
-        return axios("https://mentalflexbackend.vercel.app/testimonials/")
+        return axios("https://mentalflexbackendultimo.vercel.app/testimonials/")
         .then(res => dispatch({
             type: GET_TESTIMONIALS,
             payload :res.data
@@ -24,7 +24,7 @@ export const GET_BOOKINGS = 'GET_BOOKINGS'
 
   export const getBookings = () => {
     return(dispatch) => {
-        return axios("http://localhost:3000/tidycal/getallbookings")
+        return axios("https://mentalflexbackendultimo.vercel.app/tidycal/getallbookings")
         .then(res => dispatch({
             type: GET_BOOKINGS,
             payload :res.data
