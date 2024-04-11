@@ -218,7 +218,8 @@
         "concluded":"Concluded",
         "progress": "In Progress",
         "join": "Join",
-        "loading": "Loading ..."
+        "loading": "Loading ...",
+        "message": "If for any reason you need to cancel or reschedule this booking, we kindly ask you to do so through the email we sent you with the details of the reservation. This way, we will be able to process your request quickly and efficiently."
     }
     
 }

@@ -222,7 +222,8 @@
     "concluded":"Concluído",
     "progress": "En Progreso",
     "join": "Unirse",
-    "loading": "Cargando ..."
+    "loading": "Cargando ...",
+    "message": "Si por algún motivo necesitas cancelar o reprogramar esta reserva, te pedimos que lo hagas a través del correo electrónico que te enviamos con los detalles de la reserva. De esta manera, podremos procesar tu solicitud de manera rápida y eficiente."
 }
 
 

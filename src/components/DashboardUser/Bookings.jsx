@@ -7,6 +7,7 @@ import './Bookings.css'
 import {Spinner, Navbar, Nav, Button } from 'react-bootstrap';
 import {Link} from 'react-scroll'
 import moment from 'moment-timezone';
+import Footer from '../Footer'
 
 
 
@@ -312,10 +313,30 @@ contMISX2++,
 				
 
 		</div>
+
+		<br/>
+
+			<footer className="site-footer">
+		<div className="container">
+			<div className="row">
+				<div className="col-md-12">
+					 
+					
+				{t("bookings.message")}
+					
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+		
 	</section>
 
 
 
+
+
+<Footer/>
 
                 
             
