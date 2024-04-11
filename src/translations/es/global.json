@@ -207,6 +207,22 @@
     "optional": "Opcional",
     "image": "Imagen",
     "public": "Publicar"
+},
+
+
+
+"bookings": {
+
+    "title1":"Revisa tus turnos",
+    "title2":"Mental Flex",
+    "actual":"Turnos actuales",
+    "pendingB":"Turnos pendientes",
+    "past":"Turnos pasados",
+    "pending":"Pendiente",
+    "concluded":"Concluído",
+    "progress": "En Progreso",
+    "join": "Unirse",
+    "loading": "Cargando ..."
 }
 
 

@@ -203,6 +203,22 @@
         "optional": "Optional",
         "image": "Image",
         "public": "Public"
+    },
+
+
+
+    "bookings": {
+
+        "title1":"Check your bookings",
+        "title2":"Mental Flex",
+        "actual":"Actual Bookings",
+        "pendingB":"Pending Bookings",
+        "past":"Past Bookings",
+        "pending":"Pending",
+        "concluded":"Concluded",
+        "progress": "In Progress",
+        "join": "Join",
+        "loading": "Loading ..."
     }
     
 }

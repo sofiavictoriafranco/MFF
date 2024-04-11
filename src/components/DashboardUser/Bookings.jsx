@@ -164,9 +164,9 @@ console.log(state)
 
 
 
-						<li><a onClick={() => handleClick(actualFilteredBookings, "actual")} style={{ cursor: 'pointer', color: selectedOption === "actual" ? '#FFA500' : ''}}>Actual Bookings</a></li>
-						<li><a onClick={() => handleClick(pendingFilteredBookings, "pending")} style={{ cursor: 'pointer', color: selectedOption === "pending" ? '#FFA500' : ''}}>Pending Bookings</a></li>
-						<li><a onClick={() => handleClick(pastFilteredBookings, "past")} style={{ cursor: 'pointer', color: selectedOption === "past" ? '#FFA500' : ''}}>Past Bookings</a></li>
+						<li><a onClick={() => handleClick(actualFilteredBookings, "actual")} style={{ cursor: 'pointer', color: selectedOption === "actual" ? '#FFA500' : ''}}>{t("bookings.actual")}</a></li>
+						<li><a onClick={() => handleClick(pendingFilteredBookings, "pending")} style={{ cursor: 'pointer', color: selectedOption === "pending" ? '#FFA500' : ''}}>{t("bookings.pendingB")}</a></li>
+						<li><a onClick={() => handleClick(pastFilteredBookings, "past")} style={{ cursor: 'pointer', color: selectedOption === "past" ? '#FFA500' : ''}}>{t("bookings.past")}</a></li>
 						
 
 
@@ -193,8 +193,8 @@ console.log(state)
 			<div className="row">
 				<div className="col-md-12">
 					<div className="section-title st-center">
-						<h3>Check your bookings</h3>
-						<p>Mental Flex</p>
+						<h3>{t("bookings.title1")}</h3>
+						<p>{t("bookings.title2")}</p>
 
 
           
@@ -258,15 +258,15 @@ contMISX2++,
 
     <div>
     
-    <p>Pending</p>
+    <p>{t("bookings.pending")}</p>
     </div>
 
       ) : currentDate === new Date(booking.starts_at)? (
-        <p>In progress</p>
+        <p>{t("bookings.progress")}</p>
       ) : (
         <div>
          
-        <p>Concluded</p>
+        <p>{t("bookings.concluded")}</p>
         </div>
       )}
 
@@ -279,7 +279,7 @@ contMISX2++,
 
 {currentDate < new Date(booking.starts_at) ? (
 <button style={{ position: 'absolute', bottom: '10px', right: '10px' }} className="btn btn-main btn-lg" onClick={() => window.location.href = booking.meeting_url}>
-Join
+{t("bookings.join")}
 </button>
 ) : null}
 
@@ -298,9 +298,9 @@ Join
 
   <div className="text-center">
     <Spinner animation="border" role="status">
-      <span className="sr-only">Loading...</span>
+      <span className="sr-only">{t("bookings.loading")}</span>
     </Spinner>
-    <p>Loading...</p>
+    <p>{t("bookings.loading")}</p>
   </div>
 
 
