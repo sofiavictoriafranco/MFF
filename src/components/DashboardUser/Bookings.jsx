@@ -6,7 +6,7 @@ import { useDispatch, useSelector} from "react-redux"
 import './Bookings.css'
 import {Spinner, Navbar, Nav, Button } from 'react-bootstrap';
 import {Link} from 'react-scroll'
-
+import moment from 'moment-timezone';
 
 
 
@@ -84,6 +84,20 @@ console.log(state)
 		setState(arg); 
 
 		setSelectedOption(str)
+	  };
+
+
+
+
+	  const formatDateTime = (dateTimeString, timeZone) => {
+		// Crea un objeto moment con la fecha y hora proporcionadas y la zona horaria UTC
+		const dateTimeUTC = moment.utc(dateTimeString);
+		
+		// Convierte la fecha y hora a la zona horaria especificada
+		const dateTimeLocal = dateTimeUTC.tz(timeZone);
+		
+		// Formatea la fecha y hora en un formato deseado (por ejemplo, "DD/MM/YYYY HH:mm")
+		return dateTimeLocal.format("DD/MM/YYYY HH:mm");
 	  };
 
 
@@ -214,7 +228,7 @@ console.log(state)
 
 <div >
 <h4>{booking.booking_type_title}</h4>
-<p>{booking.starts_at.slice(0,10)} ({booking.starts_at.slice(11,16)}-{booking.ends_at.slice(11,16)})</p>
+<p>{formatDateTime(booking.starts_at, booking.timezone)} - {formatDateTime(booking.ends_at, booking.timezone).slice(11,16)}</p>
 
 
 {booking.booking_type_title === 'Monthly Individual sessions x2' && contMISX2<8? (
